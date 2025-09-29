@@ -1,0 +1,10 @@
+{
+  "short_name": "Udaan Mithra",
+  "name": "Udaan Mithra: Digital Learning",
+  "description": "Udaan Mithra is a digital learning app for rural students in Nabha, Punjab.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#F97316",
+  "background_color": "#F9FAFB"
+}
