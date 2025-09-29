@@ -29,7 +29,7 @@ const StudentCard: React.FC<{ report: StudentReport }> = ({ report }) => {
       <div className="flex justify-between items-start">
         <div>
           <h3 className="font-bold text-lg text-gray-800">{report.name}</h3>
-          <p className="text-sm text-gray-500">{t('class_11', { grade: report.grade })}</p>
+          <p className="text-sm text-gray-500">{t('class_grade', { grade: report.grade })}</p>
           <div className="mt-2 text-xs font-semibold text-gray-500">{t('last_active', { date: new Date(report.lastActiveDate).toLocaleDateString() })}</div>
         </div>
         <div className={`flex items-center justify-center w-10 h-10 rounded-full ${subjectInfo?.color || 'bg-gray-400'}`}>

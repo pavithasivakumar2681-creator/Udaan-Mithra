@@ -1,4 +1,3 @@
-
 import type { LocalizedString } from './types';
 
 export const translations: Record<string, LocalizedString> = {
@@ -25,7 +24,8 @@ export const translations: Record<string, LocalizedString> = {
   student: { en: 'Student', hi: 'विद्यार्थी', pa: 'ਵਿਦਿਆਰਥੀ' },
   teacher: { en: 'Teacher', hi: 'अध्यापक', pa: 'ਅਧਿਆਪਕ' },
   my_grade: { en: 'My Grade', hi: 'मेरी कक्षा', pa: 'ਮੇਰੀ ਜਮਾਤ' },
-  class_11: { en: 'Class {grade}', hi: 'कक्षा {grade}', pa: 'ਜਮਾਤ {grade}' },
+  class_grade: { en: 'Class {grade}', hi: 'कक्षा {grade}', pa: 'ਜਮਾਤ {grade}' },
+  class_11: { en: 'Class 11', hi: 'कक्षा 11', pa: 'ਜਮਾਤ 11' },
   class_12: { en: 'Class 12', hi: 'कक्षा 12', pa: 'ਜਮਾਤ 12' },
   create_account: { en: 'Create Account', hi: 'खाता बनाएं', pa: 'ਖਾਤਾ ਬਣਾਓ' },
   already_have_account: { en: 'Already have an account?', hi: 'पहले से ही एक खाता है?', pa: 'ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਖਾਤਾ ਹੈ?' },
