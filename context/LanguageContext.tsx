@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useCallback, useMemo, useEffect } from 'react';
 import type { Language, LocalizedString } from '../types';
 import { translations } from '../translations';
@@ -31,9 +30,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const t = useCallback((key: string, replacements?: Record<string, string | number>): string => {
     let template = translations[key]?.[language] || key;
     if (replacements) {
-        Object.entries(replacements).forEach(([key, value]) => {
-            template = template.replace(`{${key}}`, String(value));
-        });
+      for (const placeholder of Object.keys(replacements)) {
+        const value = replacements[placeholder];
+        const regex = new RegExp(`\\{${placeholder}\\}`, 'g');
+        template = template.replace(regex, String(value));
+      }
     }
     return template;
   }, [language]);
